@@ -1,6 +1,6 @@
 package system.Factory.proxy;
 
-import system.Factory.CannedFactory;
+import system.Factory.impl.CannedFactoryImpl;
 import system.model.CannedFood;
 import system.model.Fruit;
 
@@ -9,7 +9,7 @@ import system.model.Fruit;
  */
 public class ProxyFactory {
 
-    CannedFactory factory = new CannedFactory();
+    CannedFactoryImpl factory = new CannedFactoryImpl();
 
     public CannedFood checkAndReturnCanned(Fruit fruit) {
         double check = fruit.getWaterContent() * 100 / fruit.getWeight();

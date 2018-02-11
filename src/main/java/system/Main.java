@@ -1,6 +1,6 @@
 package system;
 
-import system.Factory.MainFactory;
+import system.Factory.impl.MainFactoryImpl;
 import system.Factory.proxy.ProxyFactory;
 import system.model.CannedFood;
 import system.model.Fructose;
@@ -16,7 +16,7 @@ public class Main {
         CannedFood cannedFood = factory.checkAndReturnCanned(fruit);
         System.out.println(cannedFood);
 
-        MainFactory factory2 = new MainFactory();
+        MainFactoryImpl factory2 = new MainFactoryImpl();
         Fructose fructose = factory2.getFructose(fruit);
         System.out.println(fructose);
     }

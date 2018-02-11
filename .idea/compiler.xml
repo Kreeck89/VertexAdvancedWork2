@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="PineapleFactory" />
+        <module name="PineappleFactory" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="PineapleFactory" target="1.5" />
+      <module name="PineappleFactory" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
